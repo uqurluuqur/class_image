@@ -3,7 +3,7 @@
 Created on Sun Jul 11 14:49:23 2021
 
 @author: Uğur Levent Akaoğlu
-2284099
+
 """
 import matplotlib.pyplot as plt
 import pandas as pd
