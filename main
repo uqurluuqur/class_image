@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import random
+import numpy as np
+
+
+class image:
+    
+    def __init__(self):
+        self.nrow=df.loc[df.index[-1],'A']
+        self.ncol=df.loc[df.index[-1],'B']
+        self.arr=np.zeros((self.nrow+1,self.ncol+1),dtype='i,i,i')
+        #print(self.arr)
+    
+    def addColor(self,row,col,value):
+        value= list(value.itertuples(index=False, name=None))
+        #print(value)
+        self.arr[self.nrow,self.ncol]= value
+        
+    
+    def randomizeImage(self):
+        for i in range(len(self.arr[:,0])):
+            for j in range(len(self.arr[0,:])):
+                self.arr[i,j]=(random.randrange(0,255),random.randrange(0,255),random.randrange(0,255))
+        
+    def showImage(self):
+        showit=self.arr.tolist()
+        plt.imshow(showit)
+        
+#img.addColor(row,column,df) 
+#img.showImage()
+#img.randomizeImage()
+#img.showImage()
